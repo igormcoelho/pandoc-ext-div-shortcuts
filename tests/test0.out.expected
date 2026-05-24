@@ -1,0 +1,16 @@
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "><{x=1}" ] , [] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+]
+=== END AST ===
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "center" ] , [ ( "x" , "1" ) ] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+]
+=== END AST ===
