@@ -284,6 +284,16 @@ The symbolic shortcuts are chosen to be:
 
 And finally, as a Lua filter, this is *very easy* to change with few lines of code, so if you think something else should be included or removed, just do it!
 
+### Support for SPAN
+
+Span is also supported, example to make a tiny phrase:
+
+```
+[This text is tiny]{class="----"}
+```
+
+This works because Pandoc automatically converts `"class="` statements into class names for Spans.
+
 ---
 
 ## Compatibility
@@ -292,6 +302,15 @@ The filter produces standard Pandoc AST output and is compatible with any
 downstream filter or output format that accepts the canonical class names,
 including [fonts-and-alignment](https://github.com/pandoc-ext/fonts-and-alignment).
 This is tested for PDF output in LaTeX or HTML output with custom CSS (see tests folder!).
+
+### Support for DIV and SPAN
+
+Please take a look at the generated PDF and HTML examples (based on specimen example by Nandakumar Chandrasekhar):
+
+- [specimens/specimen_small.pdf](specimens/specimen_small.pdf)
+- [specimens/specimen.pdf](specimens/specimen.pdf)
+- [specimens/specimen.html](specimens/specimen.html)
+
 
 Good luck!
 

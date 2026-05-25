@@ -1,0 +1,23 @@
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "<>{width=50%}" ] , [] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+, Para
+    [ Span ( "" , [ "<>{width=50%}" ] , [] ) [ Str "xyz" ] ]
+]
+=== END AST ===
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "center" ] , [ ( "width" , "50%" ) ] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+, Para
+    [ Span
+        ( "" , [ "center" ] , [ ( "width" , "50%" ) ] )
+        [ Str "xyz" ]
+    ]
+]
+=== END AST ===

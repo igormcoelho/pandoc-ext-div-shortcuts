@@ -1,0 +1,158 @@
+[ Header
+    2
+    ( "font-sizes-for-inline-elements" , [] , [] )
+    [ Str "Font"
+    , Space
+    , Str "sizes"
+    , Space
+    , Str "for"
+    , Space
+    , Str "Inline"
+    , Space
+    , Str "Elements"
+    ]
+, Header
+    3
+    ( "tiny-size-font-inline" , [] , [] )
+    [ Str "Tiny"
+    , Space
+    , Str "Size"
+    , Space
+    , Str "Font"
+    , Space
+    , Str "Inline"
+    ]
+, Para
+    [ Span
+        ( "" , [ "tiny" ] , [] )
+        [ RawInline (Format "latex") "\\tiny "
+        , Str "This"
+        , Space
+        , Str "text"
+        , Space
+        , Str "should"
+        , Space
+        , Str "be"
+        , Space
+        , Str "in"
+        , Space
+        , Str "tiny"
+        , Space
+        , Str "size."
+        ]
+    , Space
+    , Str "Lorem"
+    , Space
+    , Str "ipsum"
+    , SoftBreak
+    , Str "dolor"
+    , Space
+    , Str "sit"
+    , Space
+    , Str "amet,"
+    , Space
+    , Str "consectetur"
+    , Space
+    , Str "adipiscing"
+    , Space
+    , Str "elit,"
+    , Space
+    , Str "sed"
+    , Space
+    , Str "do"
+    , Space
+    , Str "eiusmod"
+    , Space
+    , Str "tempor"
+    , SoftBreak
+    , Str "incididunt"
+    , Space
+    , Str "ut"
+    , Space
+    , Str "labore"
+    , Space
+    , Str "et"
+    , Space
+    , Str "dolore"
+    , Space
+    , Str "magna"
+    , Space
+    , Str "aliqua."
+    ]
+, Header
+    3
+    ( "extra-extra-small-size-font-inline" , [] , [] )
+    [ Str "Extra"
+    , Space
+    , Str "Extra"
+    , Space
+    , Str "Small"
+    , Space
+    , Str "Size"
+    , Space
+    , Str "Font"
+    , Space
+    , Str "Inline"
+    ]
+, Para
+    [ Span
+        ( "" , [ "xxsmall" ] , [] )
+        [ RawInline (Format "latex") "\\scriptsize "
+        , Str "This"
+        , Space
+        , Str "text"
+        , Space
+        , Str "should"
+        , Space
+        , Str "be"
+        , Space
+        , Str "in"
+        , Space
+        , Str "extra"
+        , Space
+        , Str "extra"
+        , Space
+        , Str "small"
+        , Space
+        , Str "size."
+        ]
+    , Space
+    , Str "Lorem"
+    , Space
+    , Str "ipsum"
+    , Space
+    , Str "dolor"
+    , SoftBreak
+    , Str "sit"
+    , Space
+    , Str "amet,"
+    , Space
+    , Str "consectetur"
+    , Space
+    , Str "adipiscing"
+    , Space
+    , Str "elit,"
+    , Space
+    , Str "sed"
+    , Space
+    , Str "do"
+    , Space
+    , Str "eiusmod"
+    , Space
+    , Str "tempor"
+    , Space
+    , Str "incididunt"
+    , SoftBreak
+    , Str "ut"
+    , Space
+    , Str "labore"
+    , Space
+    , Str "et"
+    , Space
+    , Str "dolore"
+    , Space
+    , Str "magna"
+    , Space
+    , Str "aliqua."
+    ]
+]

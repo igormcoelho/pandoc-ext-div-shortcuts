@@ -1,0 +1,24 @@
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "<>{width=50%}" ] , [] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+, Para [ Span ( "" , [ "----" ] , [] ) [ Str "xyz" ] ]
+]
+=== END AST ===
+=== BEGIN AST ===
+[ Div
+    ( "" , [ "center" ] , [ ( "width" , "50%" ) ] )
+    [ RawBlock (Format "latex") "\\begin{center}"
+    , Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    , RawBlock (Format "latex") "\\end{center}"
+    ]
+, Para
+    [ Span
+        ( "" , [ "tiny" ] , [] )
+        [ RawInline (Format "latex") "\\tiny " , Str "xyz" ]
+    ]
+]
+=== END AST ===

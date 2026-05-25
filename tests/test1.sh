@@ -219,6 +219,20 @@ content
 '[ Div ( "" , [ "myclass" ] , [] ) [ Para [ Str "content" ] ]
 ]'
 
+run_test "SPAN center: ><" \
+'[testing]{class="><"}' \
+'[ Para [ Span ( "" , [ "><" ] , [] ) [ Str "testing" ] ] ]
+' \
+'[ Para [ Span ( "" , [ "center" ] , [] ) [ Str "testing" ] ] ]
+'
+
+run_test "SPAN center >< with args" \
+'[testing]{class="><"}' \
+'[ Para [ Span ( "" , [ "><" ] , [] ) [ Str "testing" ] ] ]
+' \
+'[ Para [ Span ( "" , [ "center" ] , [] ) [ Str "testing" ] ] ]
+'
+
 # ─────────────────────────────────────────────
 # SUMMARY
 # ─────────────────────────────────────────────

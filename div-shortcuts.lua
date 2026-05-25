@@ -56,18 +56,14 @@ local function parse_attrs(attrs_str, mapped_class)
   return attrs
 end
 
-function Div(el)
+local function apply_shortcuts(el)
   local new_classes = {}
-
   for _, cls in ipairs(el.classes) do
     local symbol, attrs_str = cls:match('^(.-)%{(.*)%}$')
-
     if not symbol then
       symbol = cls
     end
-
     local mapped = CLASS_SHORTCUTS[symbol]
-
     if mapped then
       table.insert(new_classes, mapped)
       if attrs_str then
@@ -80,7 +76,14 @@ function Div(el)
       table.insert(new_classes, cls)
     end
   end
-
   el.classes = new_classes
   return el
+end
+
+function Div(el)
+  return apply_shortcuts(el)
+end
+
+function Span(el)
+  return apply_shortcuts(el)
 end

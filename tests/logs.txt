@@ -1,0 +1,49 @@
+$ make
+pandoc --lua-filter=thirdparty/fonts-and-alignment.lua --to=latex --standalone --pdf-engine=lualatex \
+        --metadata=ulem_styles \
+        --output=specimens/specimen.pdf tests/input.md
+
+cd tests && ./test0.sh
+[ Div
+    ( "" , [ "center" ] , [ ( "x" , "1" ) ] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+]
+PASS
+Finished test0 (basic DIV)
+
+cd tests && ./test2.sh
+[ Div
+    ( "" , [ "center" ] , [ ( "width" , "50%" ) ] )
+    [ Para
+        [ Str "this" , Space , Str "is" , Space , Str "centered" ]
+    ]
+, Para
+    [ Span
+        ( "" , [ "center" ] , [ ( "width" , "50%" ) ] )
+        [ Str "xyz" ]
+    ]
+]
+PASS
+Finished test2 (SPAN)
+
+cd tests && ./test1.sh
+PASS  center: <>
+PASS  center: ><
+PASS  flushleft: <
+PASS  flushright: >
+PASS  column: | positional width
+PASS  column: | explicit key
+PASS  columns: || explicit key
+PASS  columns: || multi attrs (SOMETIMES FAILS, NON-DET ATTR ORDER!!)
+PASS  font: - small
+PASS  font: ---- tiny
+PASS  font: ++++ huge
+PASS  passthrough: unknown class
+PASS  SPAN center: ><
+PASS  SPAN center >< with args
+
+Results: 14 passed, 0 failed
+Finished test1 (long test for DIV)
+
