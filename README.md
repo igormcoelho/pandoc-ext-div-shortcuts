@@ -24,6 +24,12 @@ which is equivalent to (in the *fenced_div* syntax from filter *fonts-and-alignm
 
 ```
 
+Span is also supported, example to make a tiny phrase, use `----` (or `+++` to make it large):
+
+```
+[This text is tiny]{class="----"}
+```
+
 **Important:** for simplicity, this filter DEPENDS on the other filter [pandoc-ext/fonts-and-alignment](https://github.com/pandoc-ext/fonts-and-alignment) to correctly generate the PDF or HTML/JS output on pandoc. 
 This also covers other common/useful stuff, like: increasing and decreasing font size, centering and manipulating text columns.
 
@@ -131,12 +137,6 @@ matches the direction of the text.
            centered.
 :::::
 ```
-
-**IMPORTANT:** note that we do not support `justify` here...
-the reason is that we assume that justify is the REGULAR behavior
-of the document, specially in LaTeX! Make sure you configure this in your `headers.tex` file!
-Maybe in other formats this is
-not so common. A possibly reserved shortcut for this could be the `=` symbol (*if REALLY necessary in the future!*)
 
 > **Note:** we do not support `justify` here...
 > the reason is that we assume that justify is the REGULAR behavior
