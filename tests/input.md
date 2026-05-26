@@ -128,19 +128,19 @@ incididunt ut labore et dolore magna aliqua.
 
 ### Extra Extra Small Size Font Inline
 
-[This text should be in extra extra small size.]{.xxsmall} Lorem ipsum dolor
+[This text should be in extra extra small size.]{class="---"} Lorem ipsum dolor
 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.
 
 ### Extra Small Size Font Inline
 
-[This text should be in extra small size.]{.xsmall} Lorem ipsum dolor sit amet,
+[This text should be in extra small size.]{class="--"} Lorem ipsum dolor sit amet,
 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 et dolore magna aliqua.
 
 ### Small Size Font Inline
 
-[This text should be in small size.]{.small} Lorem ipsum dolor sit amet,
+[This text should be in small size.]{class="-"} Lorem ipsum dolor sit amet,
 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 et dolore magna aliqua.
 
@@ -152,25 +152,25 @@ labore et dolore magna aliqua.
 
 ### Large Size Font Inline
 
-[This text should be in large size.]{.large} Lorem ipsum dolor sit amet,
+[This text should be in large size.]{class="+"} Lorem ipsum dolor sit amet,
 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 et dolore magna aliqua.
 
 ### Extra Large Size Font Inline
 
-[This text should be in extra large size.]{.xlarge} Lorem ipsum dolor
+[This text should be in extra large size.]{class="++"} Lorem ipsum dolor
 sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.
 
 ### Extra Extra Large Size Font Inline
 
-[This text should be in extra extra large size.]{.xxlarge} Lorem ipsum
+[This text should be in extra extra large size.]{class="+++"} Lorem ipsum
 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
 
 ### Huge Size Font Inline
 
-[This text should be in huge size.]{.huge} Lorem ipsum
+[This text should be in huge size.]{class="++++"} Lorem ipsum
 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
 
@@ -376,7 +376,7 @@ mollit anim id est laborum.
 
 ### Tiny Size Font Block
 
-::: tiny
+::: ----
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -388,7 +388,7 @@ mollit anim id est laborum.
 
 ### Extra Extra Small Size Font Block
 
-::: xxsmall
+::: ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -400,7 +400,7 @@ mollit anim id est laborum.
 
 ### Extra Small Size Font Block
 
-::: xsmall
+::: --
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -412,7 +412,7 @@ mollit anim id est laborum.
 
 ### Small Size Font Block
 
-::: small
+::: -
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -436,7 +436,7 @@ mollit anim id est laborum.
 
 ### Large Size Font Block
 
-::: large
+::: +
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -448,7 +448,7 @@ mollit anim id est laborum.
 
 ### Extra Large Size Font Block
 
-::: xlarge
+::: ++
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -459,7 +459,7 @@ occaecat cupidatat non proident
 
 ### Extra Extra Large Size Font Block
 
-::: xxlarge
+::: +++
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
@@ -467,7 +467,7 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
 
 ### Huge Size Font Block
 
-::: huge
+::: ++++
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
@@ -512,7 +512,7 @@ occaecat cupidatat non proident
 
 ### Centered Block
 
-::: center
+::: <>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -524,7 +524,7 @@ mollit anim id est laborum.
 
 ### Left Justified Block
 
-::: flushleft
+::: <
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -536,7 +536,7 @@ mollit anim id est laborum.
 
 ### Right Justified Block
 
-::: flushright
+::: >
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -548,7 +548,7 @@ mollit anim id est laborum.
 
 ### Centered Block with User-defined Line Breaks
 
-::: centering
+::: <>
 Lorem ipsum dolor sit amet, consectetur\
 adipiscing elit, sed do eiusmod\
 tempor incididunt ut labore et dolore\
@@ -566,7 +566,7 @@ mollit anim id est laborum.
 
 ### Left Justified Block with User-defined Line Breaks
 
-::: raggedright
+::: <
 Lorem ipsum dolor sit amet, consectetur\
 adipiscing elit, sed do eiusmod\
 tempor incididunt ut labore et dolore\
@@ -584,7 +584,7 @@ mollit anim id est laborum.
 
 ### Right Justified Block with User-defined Line Breaks
 
-::: raggedleft
+::: >
 Lorem ipsum dolor sit amet, consectetur\
 adipiscing elit, sed do eiusmod\
 tempor incididunt ut labore et dolore\

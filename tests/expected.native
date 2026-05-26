@@ -6449,8 +6449,8 @@
     , Str "Breaks"
     ]
 , Div
-    ( "" , [ "centering" ] , [] )
-    [ RawBlock (Format "latex") "\\begin{centering}"
+    ( "" , [ "center" ] , [] )
+    [ RawBlock (Format "latex") "\\begin{center}"
     , Para
         [ Str "Lorem"
         , Space
@@ -6590,7 +6590,7 @@
         , Space
         , Str "laborum."
         ]
-    , RawBlock (Format "latex") "\\end{centering}"
+    , RawBlock (Format "latex") "\\end{center}"
     ]
 , Header
     3
@@ -6613,8 +6613,8 @@
     , Str "Breaks"
     ]
 , Div
-    ( "" , [ "raggedright" ] , [] )
-    [ RawBlock (Format "latex") "\\begin{raggedright}"
+    ( "" , [ "flushleft" ] , [] )
+    [ RawBlock (Format "latex") "\\begin{flushleft}"
     , Para
         [ Str "Lorem"
         , Space
@@ -6754,7 +6754,7 @@
         , Space
         , Str "laborum."
         ]
-    , RawBlock (Format "latex") "\\end{raggedright}"
+    , RawBlock (Format "latex") "\\end{flushleft}"
     ]
 , Header
     3
@@ -6777,8 +6777,8 @@
     , Str "Breaks"
     ]
 , Div
-    ( "" , [ "raggedleft" ] , [] )
-    [ RawBlock (Format "latex") "\\begin{raggedleft}"
+    ( "" , [ "flushright" ] , [] )
+    [ RawBlock (Format "latex") "\\begin{flushright}"
     , Para
         [ Str "Lorem"
         , Space
@@ -6918,6 +6918,6 @@
         , Space
         , Str "laborum."
         ]
-    , RawBlock (Format "latex") "\\end{raggedleft}"
+    , RawBlock (Format "latex") "\\end{flushright}"
     ]
 ]
