@@ -308,8 +308,8 @@ This is tested for PDF output in LaTeX or HTML output with custom CSS (see tests
 Please take a look at the generated PDF and HTML examples (based on specimen example by Nandakumar Chandrasekhar):
 
 - [specimens/specimen_small.pdf](specimens/specimen_small.pdf) from [tests/input_small.md](tests/input_small.md)
-- [specimens/specimen.pdf](specimens/specimen.pdf) from [tests/input.md](tests/input_small.md)
-- [specimens/specimen.html](specimens/specimen.html) from [tests/input.md](tests/input_small.md) and style [specimens/specimen.sass](specimens/specimen.sass)
+- [specimens/specimen.pdf](specimens/specimen.pdf) from [tests/input.md](tests/input.md)
+- [specimens/specimen.html](specimens/specimen.html) from [tests/input.md](tests/input.md) and style [specimens/specimen.sass](specimens/specimen.sass)
 
 
 Good luck!
